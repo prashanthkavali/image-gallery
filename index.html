@@ -4,16 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Image Gallery</title>
   </head>
 
   <body>
-    <div class="home">
-      <p class="quote">
-        <em>“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… 
-          It remembers little things, long after you have forgotten everything.”</em>
-      </p>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="./images/c1.jpg"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p><em>“Seeing is not enough; you have to feel what you photograph”</em></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/c2.jpg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p><em>“There is only you and your camera. The limitations in your photography
+               are in yourself, for what we see is what we are.” </em></p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/c3.jpg"  alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <p><em>“There is one thing the photograph must contain, the humanity of the moment.”</em></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <div class="container">
       <div class="image">
@@ -65,5 +96,8 @@
         <img src="./images/12.jpg" alt="" />
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" ></script>
   </body>
 </html>

@@ -2,13 +2,11 @@ html {
     scroll-behavior:smooth;
 }
 
-.home{
-    width: 100%;
+.carousel-item img{
     height: 100vh;
-    background-image: url(./images/c-d-x-5qT09yIbROk-unsplash.jpg);
-    background-size: cover;
+    min-height: 10px;
     background-position: center;
-    position: relative;;
+    background-size:cover;
 }
 
 .quote{
